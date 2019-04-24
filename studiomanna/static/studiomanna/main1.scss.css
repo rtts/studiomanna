@@ -1,0 +1,83 @@
+body, html {
+  font-family: 'Josefin Slab';
+  color: #a88d2e;
+  font-size: 20px;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Sans';
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+div.button a {
+  background: #b83b6e !important;
+  color: white !important;
+  margin-top: 25px; }
+
+header {
+  text-align: center;
+  margin: -20px 0; }
+  header img {
+    width: 300px; }
+
+nav {
+  color: #444;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); }
+  @media (min-width: 500px) {
+    nav {
+      position: relative;
+      z-index: 2; } }
+  @media (max-width: 500px) {
+    nav {
+      font-size: 14px !important; } }
+  nav a {
+    transition: 0.5s !important; }
+  nav a.current, nav a:hover {
+    transform: none !important;
+    color: #bbb !important; }
+
+section {
+  border-bottom: 1px solid #f2eddd;
+  padding: 75px 0;
+  margin-bottom: 0; }
+  section div.title h1 {
+    margin: 0;
+    margin-bottom: 1em; }
+  section div.image {
+    margin-top: 10px;
+    margin-bottom: 50px; }
+
+section.photo {
+  padding: 0;
+  margin: 0;
+  border-bottom: none; }
+  section.photo div.photo img {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover; }
+
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Josefin Slab Regular"), local("JosefinSlab-Regular"), url("Josefin_Slab.eot?#iefix") format("embedded-opentype"), url("Josefin_Slab.woff") format("woff"), url("Josefin_Slab.woff2") format("woff2"), url("Josefin_Slab.svg#JosefinSlab") format("svg"), url("Josefin_Slab.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Josefin Sans Regular"), local("JosefinSans-Regular"), url("Josefin_Sans.eot?#iefix") format("embedded-opentype"), url("Josefin_Sans.woff") format("woff"), url("Josefin_Sans.woff2") format("woff2"), url("Josefin_Sans.svg#JosefinSans") format("svg"), url("Josefin_Sans.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Droid Sans Regular"), local("DroidSans-Regular"), url("Droid_Sans.eot?#iefix") format("embedded-opentype"), url("Droid_Sans.woff") format("woff"), url("Droid_Sans.woff2") format("woff2"), url("Droid_Sans.svg#DroidSans") format("svg"), url("Droid_Sans.ttf") format("truetype"); }
+
+/*# sourceMappingURL=main1.scss.css.map */

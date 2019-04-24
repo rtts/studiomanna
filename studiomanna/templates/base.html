@@ -1,0 +1,14 @@
+{% extends 'cms/base.html' %}
+{% load static %}
+
+{% block title %}Studio Manna{% endblock %}
+
+{% block extrahead %}
+  <link rel="stylesheet" href="{% static 'studiomanna/main1.scss.css' %}">
+{% endblock %}
+
+{% block header %}
+  <div class="wrapper">
+    <a href="/"><img src="{% static 'studiomanna/logo.png' %}"></a>
+  </div>
+{% endblock %}
