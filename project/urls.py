@@ -5,6 +5,8 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import admin
 
+from studiomanna.views import PageWithEventsView
+
 admin.site.site_header = 'Studio Manna'
 admin.site.site_title = 'Studio Manna'
 
@@ -17,5 +19,7 @@ if settings.DEBUG:
 urlpatterns += [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('', PageWithEventsView.as_view(), {'slug': ''}, name='homepage'),
+    path('<slug:slug>/', PageWithEventsView.as_view(), name='page'),
     path('', include('cms.urls', namespace='cms')),
 ]

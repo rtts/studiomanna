@@ -95,11 +95,32 @@ section.photo {
 section {
   clear: both;
 }
-section.third {
-  width: 33%;
-  float: left;
-  clear: none;
-  border-bottom: none;
+
+@media(min-width: $small) {
+  section.third {
+    width: 33%;
+    float: left;
+    clear: none;
+    border-bottom: none;
+    padding: 50px;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+  section.fourth {
+    width: 25%;
+    float: left;
+    clear: none;
+    border-bottom: none;
+    padding: 50px;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
 }
 
 @font-face {

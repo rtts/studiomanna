@@ -1,0 +1,13 @@
+<div class="wrapper">
+
+  <ul>
+    {% for event in events %}
+      <li>{{event.date}}: {{event.title}}</li>
+    {% endfor %}
+  </ul>
+
+  {% if user.is_staff %}
+    <a class="edit" href="{% url 'admin:studiomanna_event_changelist' %}">[ bewerk de agenda ]</a>
+  {% endif %}
+
+</div>
