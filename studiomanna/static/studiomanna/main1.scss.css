@@ -47,7 +47,8 @@ section {
   margin-bottom: 0; }
   section div.title h1 {
     margin: 0;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-size: 30px; }
   section div.image {
     margin-top: 10px;
     margin-bottom: 50px; }
