@@ -24,6 +24,8 @@ LOGIN_REDIRECT_URL = '/'
 SECTION_TYPES = [
     ('normal', 'Normaal'),
     ('photo', 'Foto'),
+    ('third', '⅓ breed'),
+    ('fourth', '¼ breed'),
     ('buynow', 'Meld je nu aan'),
     ('upcoming', 'Agenda'),
 ]

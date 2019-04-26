@@ -62,6 +62,15 @@ section.photo {
     height: 80vh;
     object-fit: cover; }
 
+section {
+  clear: both; }
+
+section.third {
+  width: 33%;
+  float: left;
+  clear: none;
+  border-bottom: none; }
+
 @font-face {
   font-family: 'Josefin Slab';
   font-style: normal;
