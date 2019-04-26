@@ -92,6 +92,33 @@ section.photo {
   }
 }
 
+section.upcoming {
+  div.tables {
+    overflow: hidden;
+    display: flex;
+    @media(max-width: $small) { display: block }
+
+    table {
+      //border-collapse: collapse;
+      border-spacing: 0;
+      width: calc(100% - 2em);
+      flex: 1 1 0;
+      border: 3px solid $lightgold;
+      border-radius: 5px;
+      margin: 1em;
+      float: left;
+
+      th, td {
+        padding: 5px 10px;
+      }
+
+      tr:nth-child(odd) {
+        background: $lightgold;
+      }
+    }
+  }
+}
+
 
 section {
   clear: both;

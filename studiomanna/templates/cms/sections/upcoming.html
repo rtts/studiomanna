@@ -1,13 +1,20 @@
-<div class="wrapper">
+{% if user.is_staff %}
+  <a class="edit" href="{% url 'admin:studiomanna_event_changelist' %}">[ bewerk de agenda ]</a>
+{% endif %}
 
-  <ul>
-    {% for event in events %}
-      <li>{{event.date}}: {{event.title}}</li>
-    {% endfor %}
-  </ul>
-
-  {% if user.is_staff %}
-    <a class="edit" href="{% url 'admin:studiomanna_event_changelist' %}">[ bewerk de agenda ]</a>
-  {% endif %}
-
+<div class="tables">
+  {% regroup events by get_type_display as events_per_type %}
+  {% for type in events_per_type %}
+    <table>
+      <tr>
+        <th colspan="2">{{type.grouper}}</th>
+      </tr>
+      {% for event in type.list %}
+        <tr>
+          <td>{{event.date}}</td>
+          <td>{{event.title}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endfor %}
 </div>
