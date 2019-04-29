@@ -100,13 +100,18 @@ section.upcoming {
   div.tables {
     overflow: hidden;
     display: flex;
-    @media(max-width: $small) { display: block }
+    max-width: 1300px;
+    margin: auto;
+    @media(max-width: 800px) { display: block }
+
+    > div {
+      flex: 1 1 0;
+    }
 
     table {
       //border-collapse: collapse;
       border-spacing: 0;
       width: calc(100% - 2em);
-      flex: 1 1 0;
       border: 3px solid $lightgold;
       border-radius: 5px;
       margin: 1em;

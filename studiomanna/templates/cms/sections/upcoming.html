@@ -2,19 +2,41 @@
   <a class="edit" href="{% url 'admin:studiomanna_event_changelist' %}">[ bewerk de agenda ]</a>
 {% endif %}
 
+{% if section.title %}
+  <div class="title">
+    <h1>
+      {{section.title}}
+    </h1>
+  </div>
+{% endif %}
+
+{% if section.content %}
+  <div class="content">
+    {{section.content|safe}}
+  </div>
+{% endif %}
+
 <div class="tables">
   {% regroup events by get_type_display as events_per_type %}
   {% for type in events_per_type %}
-    <table>
-      <tr>
-        <th colspan="2">{{type.grouper}}</th>
-      </tr>
-      {% for event in type.list %}
+    <div>
+      <table>
         <tr>
-          <td>{{event.date}}</td>
-          <td>{{event.title}}</td>
+          <th colspan="2">{{type.grouper}}</th>
         </tr>
-      {% endfor %}
-    </table>
+        {% for event in type.list %}
+          <tr>
+            <td>{{event.date}}</td>
+            <td>{{event.title}}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
   {% endfor %}
 </div>
+
+{% if section.button_text and section.button_link %}
+  <div class="button">
+    <a href="{{section.button_link}}">{{section.button_text}}</a>
+  </div>
+{% endif %}
