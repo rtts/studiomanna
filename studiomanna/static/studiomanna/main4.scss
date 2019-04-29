@@ -134,7 +134,7 @@ section {
 }
 
 @media(min-width: $small) {
-  section.third {
+  section.third, section.buynow3 {
     width: 33%;
     float: left;
     clear: none;
@@ -146,7 +146,7 @@ section {
       font-size: 24px;
     }
   }
-  section.fourth {
+  section.fourth, section.buynow4 {
     width: 25%;
     float: left;
     clear: none;
@@ -160,7 +160,7 @@ section {
   }
 }
 
-section.buynow {
+section.buynow3, section.buynow4 {
   button {
     font-family: inherit;
     font-size: 1.5em;
