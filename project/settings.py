@@ -27,7 +27,8 @@ SECTION_TYPES = [
     ('third', '⅓ breed'),
     ('fourth', '¼ breed'),
     ('contact', 'Contactformulier'),
-    ('buynow', 'Meld je nu aan'),
+    ('buynow3', 'Meld je nu aan ⅓ breed'),
+    ('buynow4', 'Meld je nu aan ¼ breed'),
     ('upcoming', 'Agenda'),
 ]
 
