@@ -160,6 +160,20 @@ section {
   }
 }
 
+section.buynow {
+  button {
+    font-family: inherit;
+    font-size: 1.5em;
+    border: none;
+    line-height: 1.5;
+    border-radius: 3px;
+    background: $pink !important;
+    color: white !important;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+}
+
 section.contact {
   label {
     display: inline-block;

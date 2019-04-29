@@ -111,6 +111,16 @@ section {
     section.fourth h1 {
       font-size: 24px; } }
 
+section.buynow button {
+  font-family: inherit;
+  font-size: 1.5em;
+  border: none;
+  line-height: 1.5;
+  border-radius: 3px;
+  background: #b83b6e !important;
+  color: white !important;
+  padding: 5px 15px; }
+
 section.contact label {
   display: inline-block;
   text-align: right;
