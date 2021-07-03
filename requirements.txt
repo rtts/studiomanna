@@ -1,5 +1,21 @@
-Django
-django-extensions
-psycopg2 --no-binary psycopg2
-git+https://github.com/rtts/django-simplesass.git
-git+https://github.com/rtts/django-simplecms.git
+certifi==2019.9.11
+chardet==3.0.4
+Django==2.2.5
+django-ckeditor==5.7.1
+django-embed-video==1.3
+django-extensions==2.2.1
+django-js-asset==1.2.2
+easy-thumbnails==2.6
+idna==2.8
+libsass==0.19.2
+Pillow==6.1.0
+pkg-resources==0.0.0
+psycopg2==2.8.3
+pytz==2019.2
+requests==2.22.0
+six==1.12.0
+sqlparse==0.3.0
+urllib3==1.25.3
+
+git+https://github.com/rtts/django-simplesass.git@7fa1e1503426fce3f125a06590840dd5e51604d4
+git+https://github.com/rtts/django-simplecms.git@f7e4b1066d5de5fbf54345b13c8cc1718dac595e
