@@ -1,0 +1,282 @@
+
+
+
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Studio Manna - Thuis</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/cms/cms.scss.css">
+    <link rel="stylesheet" href="static/cms/hamburgers.css">
+    <link rel="icon" href="https://www.studiomanna.nl/static/favicon.png">
+    
+  <link rel="stylesheet" href="static/studiomanna/main4.scss.css">
+
+  </head>
+  <body>
+
+    <main>
+      
+
+        <header>
+          
+  <div class="wrapper">
+    <a href="index.html"><img src="static/studiomanna/logo.png"></a>
+  </div>
+
+        </header>
+
+        <nav>
+          
+            <ul id="menu">
+              
+                
+                  <li><a href="index.html" class="current">Thuis</a></li>
+                
+              
+                
+                  <li><a href="yoga/index.html" >Yoga</a></li>
+                
+              
+                
+                  <li><a href="food/index.html" >Food</a></li>
+                
+              
+                
+                  <li><a href="massage/index.html" >Massage</a></li>
+                
+              
+                
+                  <li><a href="manna/index.html" >Manna</a></li>
+                
+              
+                
+                  <li><a href="contact/index.html" >Contact</a></li>
+                
+              
+              
+            </ul>
+            <button class="hamburger hamburger--collapse" id='hamburger'>
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          
+        </nav>
+
+        <article>
+          
+  <div class="edit">
+    
+      <a href="accounts/login/index.html">inloggen</a>
+    
+  </div>
+
+  
+    <section class="photo color1">
+      
+  <div class="photo">
+    <img alt="" src="media/1_large_bZcjef1.jpg">
+  </div>
+
+
+    </section>
+  
+    <section class="third color1">
+      
+
+<div class="wrapper">
+
+  
+    <div class="image">
+      <img alt="" src="media/49_large_KXxddqo.jpg.800x800_q85.jpg">
+    </div>
+  
+
+  
+    <div class="title">
+      <h1>
+        Yoga
+      </h1>
+    </div>
+  
+
+  
+    <div class="content">
+      <p style="text-align:center">Bij Manna worden wekelijks lessen yin-yoga en flow yoga en tevens kun je priv&eacute;lessen yoga en acroyoga boeken</p>
+
+<p style="text-align:center">&nbsp;</p>
+    </div>
+  
+
+  
+
+  
+</div>
+<div class="wrapper">
+  
+
+  
+    <div class="button">
+      <a href="yoga/index.html">meer informatie</a>
+    </div>
+  
+
+</div>
+
+    </section>
+  
+    <section class="third color1">
+      
+
+<div class="wrapper">
+
+  
+    <div class="image">
+      <img alt="" src="media/Taartenfeest_dss_2.jpg.800x800_q85.jpg">
+    </div>
+  
+
+  
+    <div class="title">
+      <h1>
+        Food
+      </h1>
+    </div>
+  
+
+  
+    <div class="content">
+      <p style="text-align:center">Er vinden vegan kookworkshop plaats bij Studio Manna, zoals de workshop Woorden Proeven en Fermenteren kun je Leren<br />
+<br />
+&nbsp;Manna verzorgt persoonlijke diners en catering op maat<br />
+<br />
+Ook worden bij Manna diners gegeven<br />
+&nbsp;</p>
+    </div>
+  
+
+  
+
+  
+</div>
+<div class="wrapper">
+  
+
+  
+    <div class="button">
+      <a href="food/index.html">meer informatie</a>
+    </div>
+  
+
+</div>
+
+    </section>
+  
+    <section class="third color1">
+      
+
+<div class="wrapper">
+
+  
+    <div class="image">
+      <img alt="" src="media/24_large_2.jpg.800x800_q85.jpg">
+    </div>
+  
+
+  
+    <div class="title">
+      <h1>
+        Massage
+      </h1>
+    </div>
+  
+
+  
+    <div class="content">
+      <p style="text-align:center">Bij Manna kun je terecht voor holistisch energetische massages en workshops zoals de holistic pulsing workshop</p>
+    </div>
+  
+
+  
+
+  
+</div>
+<div class="wrapper">
+  
+
+  
+    <div class="button">
+      <a href="massage/index.html">meer informatie</a>
+    </div>
+  
+
+</div>
+
+    </section>
+  
+    <section class="normal color1">
+      
+
+<div class="wrapper">
+
+  
+
+  
+
+  
+    <div class="content">
+      <p style="text-align:center">Studio Manna &nbsp; &nbsp; E. Schumacherstraat 4&nbsp; Den Bosch &nbsp;&nbsp; info@studiomanna.nl &nbsp; &nbsp; KvK 58096968</p>
+    </div>
+  
+
+  
+
+  
+</div>
+<div class="wrapper">
+  
+
+  
+
+</div>
+
+    </section>
+  
+
+        </article>
+
+        <footer>
+          
+          
+        </footer>
+
+      
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script>
+    
+  </body>
+</html>

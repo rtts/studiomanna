@@ -1,0 +1,175 @@
+
+
+
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Studio Manna - Manna</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/cms/cms.scss.css">
+    <link rel="stylesheet" href="../static/cms/hamburgers.css">
+    <link rel="icon" href="https://www.studiomanna.nl/static/favicon.png">
+    
+  <link rel="stylesheet" href="../static/studiomanna/main4.scss.css">
+
+  </head>
+  <body>
+
+    <main>
+      
+
+        <header>
+          
+  <div class="wrapper">
+    <a href="../index.html"><img src="../static/studiomanna/logo.png"></a>
+  </div>
+
+        </header>
+
+        <nav>
+          
+            <ul id="menu">
+              
+                
+                  <li><a href="../index.html" >Thuis</a></li>
+                
+              
+                
+                  <li><a href="../yoga/index.html" >Yoga</a></li>
+                
+              
+                
+                  <li><a href="../food/index.html" >Food</a></li>
+                
+              
+                
+                  <li><a href="../massage/index.html" >Massage</a></li>
+                
+              
+                
+                  <li><a href="index.html" class="current">Manna</a></li>
+                
+              
+                
+                  <li><a href="../contact/index.html" >Contact</a></li>
+                
+              
+              
+            </ul>
+            <button class="hamburger hamburger--collapse" id='hamburger'>
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          
+        </nav>
+
+        <article>
+          
+  <div class="edit">
+    
+      <a href="../accounts/login/index.html">inloggen</a>
+    
+  </div>
+
+  
+    <section class="photo color1">
+      
+  <div class="photo">
+    <img alt="" src="../media/14_b.jpg">
+  </div>
+
+
+    </section>
+  
+    <section class="normal color1">
+      
+
+<div class="wrapper">
+
+  
+
+  
+
+  
+    <div class="content">
+      <h2 style="text-align:center">Manna</h2>
+
+<p style="text-align:center">Manna betekent hemels voedsel.</p>
+
+<p style="text-align:center">Mozes, held uit het Oude testament, trok met zijn volk door de Sina&iuml;woestijn op zoek naar het beloofde land. Na een tijdje werd men wanhopig omdat er niets meer te eten was. Maar hulp was nabij! Op een morgen bleek er, toen de morgendauw optrok, <em>manna</em> op de aarde te liggen; een fijn laagje wit dat leek op snoeppapier, smaakte naar honing en waar brood van gebakken kon worden.</p>
+
+<h2 style="text-align:center">Frauke</h2>
+
+<p style="text-align:center">Studio Manna is de plek waar Frauke haar liefde voor duurzaamheid, veganistisch koken, yoga, massage en kunst een plek geeft. Een plek waar hemels voedsel tot je komt in de vorm van een massage, een veganistich diner of een yogales.</p>
+
+<p style="text-align:center">Hier volgt een overzicht van Frauke&#39;s opleidingen en inspiratiebronnen:</p>
+
+<p style="text-align:center">PABO voor <strong>vrijeschooljuf</strong><br />
+Opleiding Synergy <em>(acrobatiek en yoga)</em> in<strong>&nbsp;</strong>Peru<br />
+Werk als &lsquo;<strong>Wereldontdooister</strong>&rsquo;<br />
+<em>(levensechte performances om mensenharten te ontdooien)</em><br />
+Vegetarische <strong>kok</strong>sopleiding bij VIP Health&amp;Nutrition te Haarlem<br />
+200h <strong>Vinyasayoga</strong>opleiding van Kula Collective te Guatamala<br />
+<em>(een samenkomst van de Andes wijsheid en de Vedische yogakennis)</em><br />
+50h<strong> Yinyoga</strong> opleiding bij Yogapoint, Utrecht</p>
+
+<p style="text-align:center"><strong>Holistisch Energetische Massage Opleiding</strong> bij Horizon in Engelen<br />
+<strong>Ritmische massage</strong>cursus bij Birgitta Panhans in &#39;s-Hertogenbosch</p>
+
+<p style="text-align:center"><br />
+Frauke in een paar allitererende woorden?<br />
+<em>Vrolijke Veganist. </em>Creatieve Chaoot. <em>Kunstige Kok</em>. Liefdevolle Luisteraar. <em>Sportieve Spiritueel.</em> Duurzame Dromer. <em>Inspiratievolle Idealist.</em> Feelzijdige Frau.</p>
+    </div>
+  
+
+  
+
+  
+</div>
+<div class="wrapper">
+  
+
+  
+
+</div>
+
+    </section>
+  
+
+        </article>
+
+        <footer>
+          
+          
+        </footer>
+
+      
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script>
+    
+  </body>
+</html>
